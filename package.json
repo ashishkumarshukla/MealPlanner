@@ -1,0 +1,24 @@
+{
+  "name": "meals-planned",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "infra"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "npm run dev -w @meals-planned/web",
+    "build": "npm run build --workspaces --if-present",
+    "check": "npm run typecheck -w @meals-planned/web && npm run build && npm test && npm run synth",
+    "test": "node --test apps/api/test/*.test.mjs",
+    "synth": "cd infra && cdk synth --quiet"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.0",
+    "aws-cdk": "^2",
+    "@types/node": "^22"
+  }
+}

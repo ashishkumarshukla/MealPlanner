@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="430" viewBox="0 0 840 430" role="img" aria-labelledby="title desc">
+  <title id="title">Two proposed identities for the meal planner</title>
+  <desc id="desc">Aaj Ki Thali uses a divided round plate. Savor uses a bowl with a single curl of steam. Both use deep olive on warm ivory.</desc>
+  <rect width="840" height="430" rx="16" fill="#F8F7F2"/>
+  <g fill="#344638" font-family="Arial, sans-serif">
+    <text x="44" y="46" font-size="15" letter-spacing="2">MEAL PLANNER  /  IDENTITY REVIEW</text>
+    <path d="M44 64H796M420 94V337M44 360H796" stroke="#C4C9BC"/>
+    <g transform="translate(70 107)" stroke="#344638" stroke-width="6" fill="none" stroke-linecap="round">
+      <circle cx="43" cy="43" r="37"/>
+      <path d="M9 57c16-1 35-10 43-26 5-9 6-17 6-21M43 44c10 9 20 13 33 15"/>
+    </g>
+    <text x="60" y="234" font-family="Georgia, serif" font-size="44">Aaj Ki Thali</text>
+    <text x="62" y="268" font-size="17">Plan lunch and dinner from your pantry.</text>
+    <text x="62" y="314" font-size="13" letter-spacing="1">01  /  THE THALI</text>
+    <g transform="translate(457 107)" stroke="#344638" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 47h72c-4 19-16 30-36 30S10 66 6 47zM29 81h26M37 36c14-10-10-16 6-29"/>
+    </g>
+    <text x="454" y="234" font-family="Georgia, serif" font-size="44">Savor</text>
+    <text x="456" y="268" font-size="17">What can I cook today?</text>
+    <text x="456" y="314" font-size="13" letter-spacing="1">02  /  THE BOWL</text>
+    <circle cx="57" cy="393" r="10" fill="#344638"/><text x="78" y="398" font-size="14">Deep olive</text>
+    <circle cx="228" cy="393" r="10" fill="#F8F7F2" stroke="#A0A696"/><text x="249" y="398" font-size="14">Warm ivory</text>
+    <circle cx="410" cy="393" r="10" fill="#C98948"/><text x="431" y="398" font-size="14">Turmeric accent</text>
+  </g>
+</svg>

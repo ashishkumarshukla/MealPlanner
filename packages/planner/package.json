@@ -1,0 +1,9 @@
+{
+  "name": "@meals-planned/planner",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "exports": "./dist/index.js"
+}

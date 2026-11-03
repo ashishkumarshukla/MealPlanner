@@ -1,0 +1,12 @@
+{
+  "name": "@meals-planned/infra",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2",
+    "constructs": "^10"
+  }
+}
