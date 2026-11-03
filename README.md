@@ -13,7 +13,9 @@ Use Node.js 22.12 or newer and npm. Run these commands from the repository root.
 
 - `npm ci` installs the locked dependencies.
 - `npm run dev` starts the web app and prints its local address.
-- `npm run check` checks TypeScript and builds the web app into `apps/web/dist/`.
+- `npm test` builds the API and runs the handler tests.
+- `npm run synth` builds the API and infrastructure, then synthesizes the stack locally. The Lambda asset includes the compiled handler and an ES module manifest.
+- `npm run check` runs the full workspace checks.
 
 See [the changelog](CHANGELOG.md) for progress. The next milestone is the guest ingredient-to-meal screen based on the approved Stitch designs.
 

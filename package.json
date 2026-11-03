@@ -14,7 +14,9 @@
     "build": "npm run build --workspaces --if-present",
     "check": "npm run typecheck -w @meals-planned/web && npm run build && npm test && npm run synth",
     "test": "node --test apps/api/test/*.test.mjs",
-    "synth": "cd infra && cdk synth --quiet"
+    "synth": "cd infra && cdk synth --quiet",
+    "pretest": "npm run build -w @meals-planned/api",
+    "presynth": "npm run build -w @meals-planned/api && npm run build -w @meals-planned/infra"
   },
   "devDependencies": {
     "typescript": "~5.9.0",
