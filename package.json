@@ -16,11 +16,13 @@
     "test": "node --test apps/api/test/*.test.mjs",
     "synth": "cd infra && cdk synth --quiet",
     "pretest": "npm run build -w @meals-planned/api",
-    "presynth": "npm run build -w @meals-planned/api && npm run build -w @meals-planned/infra"
+    "presynth": "npm run build -w @meals-planned/api && npm run build -w @meals-planned/infra",
+    "test:ui": "playwright test"
   },
   "devDependencies": {
-    "typescript": "~5.9.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^22",
     "aws-cdk": "^2",
-    "@types/node": "^22"
+    "typescript": "~5.9.0"
   }
 }

@@ -1,0 +1,41 @@
+:root { color:#28372c; background:#f8f7f2; font:16px/1.55 system-ui,sans-serif; }
+* {box-sizing:border-box}
+body {margin:0}
+header {display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #d9ddd2;padding:10px max(5vw,18px)}
+header img {width:min(250px,62vw)}
+header span,small,footer {font-size:.82rem;color:#54624e}
+main {max-width:740px;margin:clamp(24px,5vw,68px) auto;padding:0 20px}
+.eyebrow {letter-spacing:.14em;font-size:.74rem;font-weight:650}
+h1,h2 {font-family:Georgia,serif;font-weight:400;line-height:1.15}
+h1 {font-size:clamp(2.2rem,6vw,3.5rem);margin:12px 0}
+h2 {margin:0 0 12px}
+section {padding:clamp(18px,4vw,30px);background:#fffef9;border:1px solid #dadfd4;border-radius:16px;margin:20px 0}
+input,select,button {font:inherit;color:inherit;border:1px solid #9ca995;border-radius:8px;background:white;padding:8px 12px}
+button {cursor:pointer}button:disabled {opacity:.5;cursor:default}
+.primary {background:#344638;color:white;padding:12px 20px}
+.entry,.chips,.settings {display:flex;flex-wrap:wrap;gap:8px}
+.entry input {flex:1;min-width:130px}
+label {display:block}select {display:block}
+.settings {gap:16px}
+footer {margin:24px 0} li {margin-bottom:10px}
+button[aria-pressed=true] {background:#344638;color:white}
+.clear {margin:8px}
+section>label {margin-top:16px}
+section>label input {display:block;width:100%}
+:focus-visible {outline:3px solid #88602f;outline-offset:2px}
+.retention {display:block;margin-top:8px}
+.columns {display:grid;gap:20px}
+.columns aside {margin:16px 0;padding:22px;background:#eef0e5;border-radius:16px}
+.columns article {border-top:1px solid #cbd0bf;padding:12px 0}
+.columns article svg {width:100%;height:78px}
+.columns h3 {margin:4px 0;font:1.25rem Georgia,serif}
+@media(min-width:880px){
+  .dashboard {max-width:1180px;margin:18px auto}
+  .dashboard h1 {font-size:2.7rem}
+  .columns {grid-template-columns:minmax(0,1.8fr) minmax(240px,1fr);align-items:start}
+  .columns section {padding:14px 20px;margin:12px 0}
+  .columns section h2 {margin-bottom:6px}
+  .columns section p {margin:6px 0}
+  .columns .settings {gap:8px}
+  .columns select,.columns input,.columns button {padding:5px 9px}
+}

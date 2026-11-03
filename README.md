@@ -22,3 +22,9 @@ See [the changelog](CHANGELOG.md) for progress. The next milestone is the guest 
 ## Workspace checks
 
 The web app lives in `apps/web`, the Lambda handler in `apps/api`, shared planning logic in `packages/planner`, and CDK infrastructure in `infra`. Run `npm ci` followed by `npm run check` to compile all workspaces, exercise the health handler, and synthesize the HTTP API and Lambda stack locally. The GitHub workflow runs the same checks on pushes and pull requests.
+
+Run `npm run test:ui` with Google Chrome installed to exercise the guest journey at desktop and mobile sizes. The UI uses local sample recipes.
+
+The local Vite server serves POST /suggestions using the Lambda handler. The browser and API share the two sample recipes in packages/planner. Production hosting must forward /suggestions to the HTTP API.
+
+CI installs Playwright Chromium and runs the guest browser tests at both viewport sizes on pushes and pull requests.
